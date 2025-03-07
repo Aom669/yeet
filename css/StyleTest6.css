@@ -1,0 +1,14 @@
+body{
+    color:brown;
+    background-color:aquamarine;;
+    background-image: url(/imges/download.jpg)
+
+}
+h1{
+    background-color: chartreuse;
+    opacity:1;
+}
+#mydiv1{
+    background-image: url(/imges/bg1.jpg);
+    background-color: aqua;
+}
