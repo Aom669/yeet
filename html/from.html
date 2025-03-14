@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบสอบถาม</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        fieldset {
+            width: 50%;
+            margin: auto;
+            background-color: #222;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        input, textarea {
+            background-color: #333;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 5px;
+            margin: 5px 0;
+            width: 80%;
+        }
+        input[type="radio"] {
+            width: auto;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #ddd;
+        }
+        h1 {
+            color: #fff;
+        }
+
+        /* เมนูการนำทาง */
+        .nav-container {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-container ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-container ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-container ul li a:hover {
+            background-color: #6252f7;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- เมนูการนำทาง -->
+    <div class="nav-container">
+        <ul>
+            <li><a href="/html/Home.html">🏠 Home</a></li>
+            <li><a href="/html/profile.html">😎 My Profile</a></li>
+            <li><a href="/html/FOOD.html">😋 My Foods</a></li>
+            <li><a href="/html/Mygame.html">🎮 My Game Room</a></li>
+            <li><a href="/html/from.html">📃 My Form</a></li>
+        </ul>
+    </div>
+
+    <h1>แบบสอบถาม</h1>
+    <form action="TestHtmlinput3.html">
+        <fieldset>
+            <legend> ข้อมูลทั่วไป </legend>
+            ระบุชื่อ-นามสกุล :<br> 
+            <input type="text" name="fullname" maxlength="30">
+            <br>
+            ระบุอายุ : <br>
+            <input type="number" name="age">
+            <br>
+            เพศ : <br>
+            <input type="radio" name="gender" value="male"> ชาย
+            <input type="radio" name="gender" value="female"> หญิง
+            <br>
+            ศาสนา : <br>
+            <input type="radio" name="religion" value="พุทธ"> พุทธ
+            <input type="radio" name="religion" value="คริสต์"> คริสต์
+            <input type="radio" name="religion" value="อิสลาม"> อิสลาม
+            <br>
+            อื่นๆ : <br>
+            <input type="text" name="religion2" maxlength="30">
+            <br>
+            ระดับการศึกษาที่จบ : <br>
+            <input type="radio" name="study" value="ต่ำกว่ามัธยม"> ต่ำกว่ามัธยม
+            <input type="radio" name="study" value="มัธยมศึกษาตอนต้น"> มัธยมศึกษาตอนต้น
+            <br>
+            <input type="radio" name="study" value="มัธยมศึกษาตอนปลาย"> มัธยมศึกษาตอนปลาย
+            <input type="radio" name="study" value="อนุปริญญา"> อนุปริญญา
+            <input type="radio" name="study" value="ปริญญาตรี"> ปริญญาตรี
+            <input type="radio" name="study" value="สูงกว่าปริญญาตรี"> สูงกว่าปริญญาตรี
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend> ข้อมูลส่วนตัว </legend>
+            อาชีพ : <br>
+            <input type="text" name="occupation" maxlength="30">
+            <br>
+            รายได้เฉลี่ยต่อเดือน : <br>
+            <input type="number" name="income"> บาท
+            <br>
+            ระบุที่อยู่ : <br>
+            <textarea name="address" rows="5" cols="50"></textarea>
+            <br>
+            <input type="submit" value="ส่งข้อมูล">
+            <input type="reset" value="ล้างข้อมูล">
+        </fieldset>
+    </form>
+
+</body>
+</html>

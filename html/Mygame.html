@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+
+        /* สไตล์สำหรับเมนูการนำทาง */
+        .nav-container {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-container ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-container ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-container ul li a:hover {
+            background-color: #6252f7;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .game {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+            padding: 20px;
+            border-radius: 15px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 400px;
+        }
+
+        .game img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .game:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- เมนูการนำทาง -->
+    <div class="nav-container">
+        <ul>
+            <li><a href="/html/Home.html">🏠 Home</a></li>
+            <li><a href="/html/profile.html">😎 My Profile</a></li>
+            <li><a href="/html/FOOD.html">😋 My Foods</a></li>
+            <li><a href="/html/Mygame.html">🎮 My Game Room</a></li>
+            <li><a href="/html/from.html">📃 My Form</a></li>
+        </ul>
+    </div>
+
+    <h1>เกมที่ฉันชอบเล่น</h1>
+    <div class="container">
+        <div class="game">
+            <h2>RoV</h2>
+            <img src="/imges/rov.JPG" alt="RoV">
+            <p>ชื่อในเกม: Bruh </p>
+        </div>
+        <div class="game">
+            <h2>Roblox</h2>
+            <img src="/imges/Roblox.JPB.png" alt="Roblox">
+            <p>ชื่อในเกม: aom8080za </p>
+        </div>
+        <div class="game">
+            <h2>Terraria</h2>
+            <img src="/imges/Teraria.JPG" alt="Terraria">
+            <p>ชื่อในเกม: Ohm </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css"> <!-- ตรวจสอบให้แน่ใจว่าไฟล์นี้มีอยู่ -->
+    <title>แนะนำตัว</title>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            text-align: center;
+            background: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* เมนูการนำทาง */
+        .nav-container {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-container ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-container ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-container ul li a:hover {
+            background-color: #6252f7;
+            color: #333;
+        }
+
+        .container {
+            width: 60%;
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            background: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f39c12;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s, border 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
+            border: 3px solid #f1c40f;
+        }
+
+        h1, h2 {
+            color: #f39c12;
+        }
+
+        p {
+            font-size: 18px;
+            color: #e0e0e0;
+            margin: 8px 0;
+            margin-bottom: 15px;
+        }
+
+        strong {
+            color: #f39c12;
+            font-weight: 600;
+        }
+
+        strong[style="color: red;"] {
+            color: #e74c3c !important;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+
+        /* ปุ่ม */
+        button {
+            background-color: #ffcc00;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e6b800;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- เมนูการนำทาง -->
+    <div class="nav-container">
+        <ul>
+            <li><a href="/html/Home.html">🏠 Home</a></li>
+            <li><a href="/html/profile.html">😎 My Profile</a></li>
+            <li><a href="/html/FOOD.html">😋 My Foods</a></li>
+            <li><a href="/html/Mygame.html">🎮 My Game Room</a></li>
+            <li><a href="/html/from.html">📃 My Form</a></li>
+        </ul>
+    </div>
+
+    <!-- เนื้อหาของหน้าส่วนแนะนำตัว -->
+    <div class="container">
+        <h1>แนะนำตัว</h1>
+        <!-- แก้ไขให้ชื่อไฟล์รูปถูกต้อง -->
+        <img src="/imges/Screenshot 2025-03-13 194829.png" alt="รูปโปรไฟล์" class="profile-img">
+        <p><strong>ชื่อ:</strong> โอห์ม</p>
+        <p><strong>ชื่อจริง:</strong> นาย ทรัพย์เจริญ พลบุตร</p>
+        <p><strong>รหัสนักศึกษา:</strong>67424201010</p>
+        <p><strong>อายุ:</strong> 19 ปี</p>
+        <p><strong>งานอดิเรก:</strong> เล่นกีฬา | เล่นเกม | อ่านหนังสือการ์ตูน</p>
+        <p><strong>วันเกิด:</strong> 27 กรกฏาคม พ.ศ. 2548</p>
+        <p><strong>คณะ:</strong> เทคโนโลยีสารสนเทศ</p>
+        <p><strong>สาขา:</strong> วิทยาการคอมพิวเตอร์</p>
+    </div>
+</body>
+</html>
